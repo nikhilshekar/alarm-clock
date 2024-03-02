@@ -132,7 +132,7 @@ function deleteAlarm(event, time, intervalId) {
   console.log(time);
 
   deleteAlarmFromLocal(time);
-  alarm.remove();
+  alarm.innerHtml = "";
 }
 
 //deleting the alarm from local storage
